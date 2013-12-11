@@ -16,11 +16,11 @@ module Citibike
 
     before do
       json = File.open("data/citibikenyc.json").read
-      @data = MultiJson.load(json)
+      @data = MultiJson.load(json) # a ruby hash of the data from JSON file
     end
 
     get '/' do
-      erb :home
+      erb :home # will print out the contents of @data
     end
 
   end

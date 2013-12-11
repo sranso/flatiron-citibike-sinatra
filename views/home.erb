@@ -1,2 +1,5 @@
 <h1>THE DATA</h1>
 <%= @data.inspect %>
+<% @data.each do | hash | %>
+  <p> <%= hash["name"] %>, <%= hash["lng"]%> <%= hash["lat"]%> </p>
+<% end %>
