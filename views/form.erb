@@ -1,0 +1,21 @@
+<h3>Map my route!</h3>
+<form></form>
+  <label for="start">Start:</label>
+    <select name="start">
+      <% @data.each do | hash | %>
+        <option value="<%= hash["name"] %>"><%= hash["name"] %></option>
+      <% end %>    </select>
+  </label>
+
+  <br></br>
+  <label for="end">End:</label>
+    <select name="end">
+      <% @data.each do | hash | %>
+        <option value="<%= hash["name"] %>"><%= hash["name"] %></option>
+      <% end %>
+    </select>
+  </label>
+  
+  <br></br>
+
+  <button type="submit" value="Submit">Submit</button>
