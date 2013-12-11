@@ -1,5 +1,5 @@
 <h3>Map my route!</h3>
-<form></form>
+<form action="/form" method="POST">
   <label for="start">Start:</label>
     <select name="start">
       <% @data.each do | hash | %>
@@ -19,3 +19,4 @@
   <br></br>
 
   <button type="submit" value="Submit">Submit</button>
+</form>
