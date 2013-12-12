@@ -1,17 +1,22 @@
 <h3>Map my route!</h3>
-<form action="/form" method="POST">
+<form action="/map" method="POST">
   <label for="start">Start:</label>
     <select name="start">
       <% @data.each do | hash | %>
-        <option value="<%= hash["name"] %>"><%= hash["name"] %></option>
-      <% end %>    </select>
+        <option value="<%= [ hash["lng"], hash["lat"] ] %>">
+          <%= hash["name"] %>
+        </option>
+      <% end %>
+    </select>
   </label>
 
   <br></br>
   <label for="end">End:</label>
     <select name="end">
       <% @data.each do | hash | %>
-        <option value="<%= hash["name"] %>"><%= hash["name"] %></option>
+        <option value="<%= [ hash["lng"], hash["lat"] ] %>">
+          <%= hash["name"] %>
+        </option>
       <% end %>
     </select>
   </label>
