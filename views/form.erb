@@ -3,10 +3,10 @@
   <label for="start">Start:</label>
     <select name="start">
       <% @data.each do | hash | %>
-        <option value="<%= [ hash["lng"], hash["lat"] ] %>">
+        <option value="<%= [ hash["lat"], hash["lng"] ] %>">
           <%= hash["name"] %>
         </option>
-      <% end %>
+      <% end %> 
     </select>
   </label>
 
@@ -14,7 +14,7 @@
   <label for="end">End:</label>
     <select name="end">
       <% @data.each do | hash | %>
-        <option value="<%= [ hash["lng"], hash["lat"] ] %>">
+        <option value="<%= [ hash["lat"], hash["lng"] ] %>">
           <%= hash["name"] %>
         </option>
       <% end %>

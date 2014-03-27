@@ -3,6 +3,7 @@ GEM
   specs:
     backports (3.3.3)
     eventmachine (1.0.3)
+    json (1.8.1)
     multi_json (1.7.7)
     rack (1.5.2)
     rack-protection (1.5.0)
@@ -28,6 +29,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  json
   multi_json
   shotgun
   sinatra
